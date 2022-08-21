@@ -22,7 +22,7 @@ Run the IPFS setup script: ./install.sh
 
 This will set up a private IPFS instance which is not running as a background process, but can still be used by the other scripts to submarine and reveal files. It also starts a public IPFS server, the control panel of which is found at http://127.0.0.1/5001.
 
-To submarine a particular folder, run: ./submarine.sh <folder>
+To submarine a particular DNA dataset, run: ./submarine_DNA.sh <DNA dataset folder>
 
-To reveal a particular file from the folder, run: ./reveal.sh <folder>/<file>
+To reveal a particular DNA dataset from the folder, run: ./reveal_BioNFT.sh <DNA dataset folder>/<DNA_file>
 
