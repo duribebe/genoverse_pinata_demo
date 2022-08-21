@@ -11,3 +11,18 @@ ifps://<folder CID>/<BioNFT ID>
 and the contract deployer only wants to reveal the underlying images over time, rather than all at once.
 
 Some IPFS gateway companies offer this as a paid service, but the following project allows anyone to do this for free.
+
+Overview
+The scripts set up two instances of the IPFS, one which is kept private, and one which is a public gateway out to the rest of the IPFS. The image folder is added and pinned in the private IPFS swarm, and then commands are avaialbe for copying parts but not all of the files underlying a folder to the public gateway.
+
+GATEWAY: https://genoverse.mypinata.cloud
+
+To use
+Run the IPFS setup script: ./install.sh
+
+This will set up a private IPFS instance which is not running as a background process, but can still be used by the other scripts to submarine and reveal files. It also starts a public IPFS server, the control panel of which is found at http://127.0.0.1/5001.
+
+To submarine a particular folder, run: ./submarine.sh <folder>
+
+To reveal a particular file from the folder, run: ./reveal.sh <folder>/<file>
+
